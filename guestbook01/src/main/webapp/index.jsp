@@ -38,6 +38,8 @@ List<GuestBookVo> list = new GuestBookDao().findAll();
 		<%
      for(GuestBookVo vo :  list)
      {
+    
+    	 
      %>
 		<tr>
 			<td><%=vo.getNo() %></td>
@@ -48,7 +50,9 @@ List<GuestBookVo> list = new GuestBookDao().findAll();
 		</tr>
 		
 		<tr>
-			<td colspan=4><%=vo.getMessage() %>		</td>
+		    
+			<td colspan=4> <pre><%=   vo.getMessage() %>		</pre></td>
+			
 		</tr>
 	
 
