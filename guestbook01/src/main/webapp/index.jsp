@@ -36,13 +36,14 @@ List<GuestBookVo> list = new GuestBookDao().findAll();
 	<table width=510 border=1>
 
 		<%
+	int  i= 0;
      for(GuestBookVo vo :  list)
-     {
-    
+     { i++;;
+     
     	 
      %>
 		<tr>
-			<td><%=vo.getNo() %></td>
+			<td><%=i %></td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
 
