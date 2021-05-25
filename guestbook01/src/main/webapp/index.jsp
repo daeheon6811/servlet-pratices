@@ -46,7 +46,7 @@ List<GuestBookVo> list = new GuestBookDao().findAll();
 			<td><%=i %></td>
 			<td><%=vo.getName() %></td>
 			<td><%=vo.getRegDate() %></td>
-
+			
 			<td><a href="<%=request.getContextPath()%>/deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		
