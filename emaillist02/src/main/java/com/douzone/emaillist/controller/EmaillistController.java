@@ -37,7 +37,7 @@ public class EmaillistController extends HttpServlet {
 					vo.setEmail(email);								
 					new EmaillistDao().insert(vo);
 					// 2 redirect 응답
-					response.sendRedirect(request.getContextPath() + "/gb");				
+					response.sendRedirect(request.getContextPath() + "/el");				
 				}else if("delete".equals(action)) {
 					String firstName = request.getParameter("fn");
 					String lastName = request.getParameter("ln");
@@ -50,7 +50,7 @@ public class EmaillistController extends HttpServlet {
 					new EmaillistDao().insert(vo);
 					
 					// 2 redirect 응답
-					response.sendRedirect(request.getContextPath() + "/gb");
+					response.sendRedirect(request.getContextPath() + "/el");
 					
 				} else {
 					/* default request(action) */
