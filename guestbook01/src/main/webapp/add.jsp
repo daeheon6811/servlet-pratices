@@ -1,4 +1,3 @@
-
 <%@page import="java.util.Date"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="com.douzone.guetbook.dao.GuestBookDao"%>

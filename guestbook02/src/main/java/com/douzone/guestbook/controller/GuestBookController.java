@@ -36,7 +36,7 @@ public class GuestBookController extends HttpServlet {
 		// post 방식으로 전달받는 파라미터 값의 엔코딩 처리
 		request.setCharacterEncoding("utf-8");
 		String action = request.getParameter("a");
-		String noaction = request.getParameter("no");
+	//	String noaction = request.getParameter("no");
 
 		
 		if ("delete".equals(action)) {
@@ -49,7 +49,7 @@ public class GuestBookController extends HttpServlet {
 
 		} else if (("deleteform").equals(action)) {
 			
-			 noaction = request.getParameter("no");
+		//	 noaction = request.getParameter("no");
 		//	 noaction = request.getAttribute(noaction);
 					
 			// 3. view로 포워딩

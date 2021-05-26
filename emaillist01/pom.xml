@@ -9,12 +9,17 @@
 	</parent>
 	<artifactId>emaillist01</artifactId>
 	<packaging>war</packaging>
-	   <dependencies>
-  <!-- 마리아 DB 드라이버 -->
-  <dependency>
-    <groupId>org.mariadb.jdbc</groupId>
-    <artifactId>mariadb-java-client</artifactId>
-    <version>2.7.2</version>
-  </dependency>
-  </dependencies>
+	<dependencies>
+		<!-- 마리아 DB 드라이버 -->
+		<dependency>
+			<groupId>org.mariadb.jdbc</groupId>
+			<artifactId>mariadb-java-client</artifactId>
+			<version>2.7.2</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>emaillist01</finalName>
+	</build>
+
 </project>

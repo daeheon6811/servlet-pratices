@@ -14,5 +14,8 @@
 			<artifactId>mariadb-java-client</artifactId>
 			<version>2.7.2</version>
 		</dependency>
-	</dependencies>
+	</dependencies>	
+	<build>
+		<finalName>guestbook01</finalName>
+	</build>
 </project>
