@@ -66,42 +66,7 @@ public class GuestBookDao {
 		return result;		
 	}
 	
-	public String getPasword(Integer no) {
-		List<GuestBookVo> resultselect = new ArrayList<>();
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs  = null;
-		String result = "";
-		
-		try {
-			conn = getConnection();
-			
-			String sql ="select password from guestbook where no =";
-			pstmt = conn.prepareStatement(sql + no);
-			rs = pstmt.executeQuery();
-			
-			while(rs.next()) {
-				result = rs.getString(1);
-						
-			}
-			} catch (SQLException e) {
-			System.out.println("error:" + e);
-		} finally {
-			try {
-				// 자원정리(clean-up)
-				if(pstmt != null) {
-					pstmt.close();
-				}
-				if(conn != null) {
-					conn.close();
-				}
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
-		
-		return result;		
-	}
+	
 	
     
 	public Boolean Delete(int no , String password) {
