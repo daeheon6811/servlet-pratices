@@ -23,5 +23,7 @@
 			<h1 style='color:black'>Hello World</h1>
 		</c:otherwise>
 	</c:choose>
+	
+
 </body>
 </html>
