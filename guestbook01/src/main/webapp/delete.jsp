@@ -3,14 +3,9 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
-
 String password = request.getParameter("password");
 Integer no = Integer.parseInt(request.getParameter("no"));
 
 new GuestBookDao().Delete(no, password);
 response.sendRedirect(request.getContextPath());
-
-
-
-
 %>
